@@ -21,10 +21,6 @@ spec:
       containers:
       - name: auth
         image: akashlv/sys-micro-auth:latest
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 5000
         envFrom:
